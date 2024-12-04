@@ -6,6 +6,10 @@ The interface to a SOAP web service is captured in WSDL. JAXB provides a way to 
 
 Find the WSDL for the country service at: http://localhost:8080/ws/countries.wsdl
 
+<br/>
+
+Update this part of file in the `pom.xml`:
+
 ```xml
 <plugin>
 	<groupId>com.sun.xml.ws</groupId>
