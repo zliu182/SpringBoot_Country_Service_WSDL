@@ -243,6 +243,25 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 }
 ```
 
+<br />
+
+## Make the Application Executable
+
+Update the `ProducingWebServiceApplication.java` at: `src/main/java/com/example/producingwebservice/ProducingWebServiceApplication.java`
+```java
+package com.example.producingwebservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ProducingWebServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProducingWebServiceApplication.class, args);
+	}
+}
+```
 
 
 
