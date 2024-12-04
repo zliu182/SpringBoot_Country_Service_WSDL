@@ -26,7 +26,7 @@ Create an XSD file with operations to return a country’s `name`, `population`,
 Create a file named `countries.xsd` in such path: `src/main/resources/countries.xsd)`
 
 ```xsd
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/producingwebservice"
            targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
 
     <xs:element name="getCountryRequest">
@@ -176,7 +176,7 @@ import io.spring.guides.gs_producing_web_service.GetCountryResponse;
 
 @Endpoint
 public class CountryEndpoint {
-	private static final String NAMESPACE_URI = "http://spring.io/guides/gs-producing-web-service";
+	private static final String NAMESPACE_URI = "http://spring.io/guides/producingwebservice";
 
 	private CountryRepository countryRepository;
 
@@ -199,7 +199,7 @@ public class CountryEndpoint {
 
 ## Configure Web Service Beans
 
-Create a new file named `WebServiceConfig`: `src/main/java/com/example/producingwebservice/WebServiceConfig.java`
+Create a new file named `WebServiceConfig.java`: `src/main/java/com/example/producingwebservice/WebServiceConfig.java`
 ```java
 package com.example.producingwebservice;
 
@@ -231,7 +231,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
 		wsdl11Definition.setPortTypeName("CountriesPort");
 		wsdl11Definition.setLocationUri("/ws");
-		wsdl11Definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
+		wsdl11Definition.setTargetNamespace("http://spring.io/guides/producingwebservice");
 		wsdl11Definition.setSchema(countriesSchema);
 		return wsdl11Definition;
 	}
