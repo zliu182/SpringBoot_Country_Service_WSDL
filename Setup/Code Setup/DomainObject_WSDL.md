@@ -58,6 +58,26 @@ Quick fix:
 </execution>
 ```
 
+<br />
+
+## Enable for project build
+
+<img width="715" alt="Screenshot 2024-12-03 at 11 58 06 PM" src="https://github.com/user-attachments/assets/bbc23163-261e-4b03-b440-77b57b48a54d">
+
+<br /><br />
+
+```xml
+<executions>
+	<execution>
+		<?m2e execute onConfiguration,onIncremental?>
+		<goals>
+			<goal>wsimport</goal>
+		</goals>
+	</execution>
+</execution>
+```
+
+
 
 
 
