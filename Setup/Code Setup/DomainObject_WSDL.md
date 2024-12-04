@@ -33,3 +33,33 @@ Update this part of file in the `pom.xml`:
 	</configuration>
 </plugin>
 ```
+<br />
+
+## Enable execution configuration
+
+<img width="835" alt="Screenshot 2024-12-03 at 11 47 05 PM" src="https://github.com/user-attachments/assets/e999fa9e-6ecc-4742-a2d9-39fd0acf6eae">
+
+<br /><br />
+
+Quick fix:
+
+<img width="720" alt="Screenshot 2024-12-03 at 11 47 22 PM" src="https://github.com/user-attachments/assets/247cbc76-36b2-4640-912d-187e8d62a932">
+
+<br /><br />
+
+```xml
+<executions>
+	<execution>
+		<?m2e execute onConfiguration?>
+		<goals>
+			<goal>wsimport</goal>
+		</goals>
+	</execution>
+</execution>
+```
+
+
+
+
+
+
