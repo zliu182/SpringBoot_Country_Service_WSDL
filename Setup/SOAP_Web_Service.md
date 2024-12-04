@@ -27,7 +27,7 @@ Create a file named `countries.xsd` in such path: `src/main/resources/countries.
 
 ```xsd
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/producingwebservice"
-           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
+           targetNamespace="http://spring.io/guides/producingwebservice" elementFormDefault="qualified">
 
     <xs:element name="getCountryRequest">
         <xs:complexType>
@@ -263,8 +263,11 @@ public class ProducingWebServiceApplication {
 }
 ```
 
+<br />
 
+## Test the Application
 
+If you use Maven, you can run the application by using `./mvnw spring-boot:run`.
 
 
 
