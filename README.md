@@ -1,5 +1,7 @@
 ## SpringBoot_European_WSDL
 
+This SpringBoot project creates a SOAP web service that provides country information (such as capital, currency, and population) through a `CountryEndpoint`, which interacts with a `CountryRepository` storing predefined country data.
+
 <br />
 
 ## Test your local host
