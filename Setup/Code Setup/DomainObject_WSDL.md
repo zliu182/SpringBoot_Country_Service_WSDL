@@ -8,7 +8,7 @@ Find the WSDL for the country service at: http://localhost:8080/ws/countries.wsd
 
 <br/>
 
-Update this part of file in the `pom.xml`:
+To generate Java classes from the WSDL in Maven, update this part of file in the `pom.xml`:
 
 ```xml
 <plugin>
